@@ -1,0 +1,458 @@
+body {
+    background-color: #c5cbbf 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#navbar {
+    background-color: #b68f40;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+a {
+    position: relative;
+    color: aliceblue;
+    text-decoration-line: none;
+    margin: 150px;
+}
+span {
+    position: relative;
+    color: aliceblue;
+    margin: 150px;
+    transition: all 0.5s ease-in 0.3s;
+}
+span:active {
+    background-color: #9b7936;
+}
+ul {
+    margin: 0;
+    position: relative;
+    right: 0px;
+}
+li {
+    margin-right: 0px;
+    list-style-type: none;
+}
+
+
+.dropdowncontent {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+.dropdowncontent li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    background-color: #a77e58;
+    border: 1px solid aliceblue;
+    height: 50px;
+    width: 370px;
+}
+
+
+#name {
+    font-size: 90px;
+    display: inline;
+    color: #30011e;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: slideIn 1s ease-in forwards;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#name:hover {
+    font-size: 93px;
+}
+
+img {
+    position: relative;
+    top: 10px;
+    float: right;
+    right:150px ;
+    height: 600px;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: slideIn 1s ease-in forwards;
+    transition-property: all;
+    transition-duration: 0.3s;
+    animation: slideIn 1s ease-out forwards;
+} 
+img:hover {
+    height: 615px;
+}
+
+.greet {
+    position: relative;
+    top: 100px;
+    font-size:25px;
+    color: #545454;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: slideIn 1s ease-in forwards;
+    transition-property: all;
+    transition-duration: 0.2s;
+    animation: slideIn 1s ease-out forwards;
+    margin: 30px;
+}
+
+#designation {
+    position: relative;
+    top: 80px;
+    left: 30px;
+    margin: 50px;
+    font-size: 30px;
+}
+
+#shrtintro {
+    top: 60px;
+    font-size: 20px;
+    left: 30px;
+    margin: 50px;
+    width: 620px;
+    height: 150px;
+    position: relative;
+    color: #545454;
+    transition: all 0.2s;
+}
+
+#shrtintro:hover {
+    font-size: 21px;
+    width: 660px;
+}
+
+/*skill section styling*/
+#skillh {
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    background-color: #b68f40;
+    border-radius: 25px;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: slideIn 1s ease-in forwards;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#skill {
+    position: relative;
+    top: 250px;
+    
+}
+
+.skillbox div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #545454;
+    border-left: 18px solid #545454;
+    transition: all 0.8s ease-in;
+    color: #330220;
+    font-size: larger;
+
+}
+
+
+#skill1 {
+    left: 580px;
+
+}
+
+#skill2 {
+    top: 200px;
+    left: 170px;
+    
+}
+
+#skill3 {
+    top: 200px;
+    left: 430px;
+}
+
+#skill4 {
+    top: 425px;
+    left: -170px;
+}
+
+#skill5 {
+    top: 425px;
+    left: 70px;
+}
+
+i {
+    font-size: 34px;
+    color: #330220;
+}
+
+#skill6 {
+    top: 610px;
+    left: -300px;
+
+}
+
+.skillbox div:hover {
+    height: 170px;
+    width: 170px;
+    border-radius: 20%;
+    border: 2px solid #b83c029f;
+    border-left: 18px solid #b83c029f;
+
+}
+
+#education {
+    position: relative;
+    top: 1000px;
+}
+#edh {
+    font-size: 60px;
+    background-color: #b68f40;
+    border-radius: 25px;
+    text-align: center;
+    left: 30px;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: slideIn 1s ease-in forwards;
+    transition-property: all;
+    transition-duration: 0.3s;
+    
+}
+
+/*style for education*/
+
+
+.edcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.edcontainer div {
+    position: relative;
+    display: inline;
+    top: 120px;
+    height: 150px;
+    width: 325px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid #545454;
+    border-left: 14px solid #545454;
+    transition: all 0.6s;
+    color: #330220;
+}
+
+.edcontainer div:hover {
+    height: 190px;
+    width: 380px;
+    font-size: 22px;
+    border: 2px solid #b83c029f;
+    border-left: 14px solid #b83c029f;
+}
+
+.present {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #330220;
+}
+.present i {
+    font-size: 34px;
+    color: #330220;
+}
+
+.highschool {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.highschool i {
+    font-size: 34px;
+    color: #330220;
+}
+
+/*style portfolio*/
+#project h1 {
+    font-size: 60px;
+    width: 100%;
+    background-color: #b68f40;
+    border-radius: 25px;
+    text-align: center;
+    left: 30px;
+}
+
+#project {
+    position: relative;
+    top: 1300px;
+}
+
+.projcontainer {
+    position: relative;
+    top: 100px;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 950px;
+}
+
+.projcontainer div {
+    font-size: 20px;
+    height: 200px;
+    border-radius: 20px;
+    width: 350px;
+    border: 2px solid #545454;
+    border-left: 18px solid #545454;
+    transition: all 0.6s;
+}
+
+.projcontainer div ul li {
+    background-color: #c5cbbf; 
+    border: none;
+    height: auto;
+    width: auto;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #330220;
+}  
+
+ b {
+    text-align: center;
+    color: #330220;
+}
+
+.projcontainer div:hover {
+    font-size: 22px;
+    height: 220px;
+    width: 370px;
+    border: 2px solid #b83c029f;
+    border-left: 14px solid #b83c029f;
+}
+
+/* style for contact*/
+
+#contact {
+    position: relative;
+    top: 1600px;
+
+}
+
+#conth {
+    font-size: 60px;
+    background-color: #b68f40;
+    border-radius: 25px;
+    text-align: center;
+}
+#contact p {
+    text-align: center;
+    color: #330220;
+    font-size: 25px;
+}
+
+.contact-container {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contact-container div {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid #545454;
+    border-left: 18px solid #545454;
+    transition: all 0.8s;
+}
+
+.contact-container div:hover {
+    transform: translateY(-20px);
+    border: 2px solid #b83c029f;
+    border-left: 18px solid #b83c029f;
+
+}
+
+#wapp {
+    font-size: 45px;
+    color: rgb(26, 209, 56);
+}
+
+#actuallinks p {
+    text-align: start;
+    font-size: 25px;
+}
+
+#actuallinks a {
+    color:#30011e;
+    text-align: start;
+    font-size: 20px;
+}
+
+#email {
+    font-size: 45px;
+    color: rgb(22, 32, 124);
+}
+
+button {
+    background-color: #2c2b2b;
+}
+
+form {
+    font-size: 20px;
+    color:#330220;
+}
+#namee {
+    width: 300px;
+    height: 20px;
+}
+
+#emailform {
+    width: 300px;
+    height: 20px;
+}
+
+#msg {
+    width: 300px;
+}
+
+legend {
+    font-size: 25px;
+}
